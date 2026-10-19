@@ -157,8 +157,12 @@ a,button,summary{touch-action:manipulation;-webkit-tap-highlight-color:transpare
 .education-item h3{font-size:15px;font-weight:550;line-height:1.5}
 .education-role,.education-year{display:block;font-size:13px;color:var(--muted);margin-top:2px}
 .education-item p{font-size:14px;color:var(--muted);margin-top:8px;max-width:60ch}
-.education-highlights-title{font-size:13px;font-weight:550;margin:20px 0 12px}
-.education-highlights{display:grid;gap:20px;list-style:none;margin:0;padding:0}
+.education-accordion{margin-top:20px}
+.education-accordion-summary{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:13px;font-weight:550;cursor:pointer;list-style:none}
+.education-accordion-summary::-webkit-details-marker{display:none}
+.education-accordion-toggle{--od-icon-size:14px;flex:none;color:var(--muted);transition:transform var(--duration) ease-out}
+.education-accordion[open] .education-accordion-toggle{transform:rotate(180deg)}
+.education-highlights{display:grid;gap:20px;list-style:none;margin:12px 0 0;padding:0}
 .education-highlight-heading{display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:13px}
 .education-highlight-heading strong{font-weight:550}
 .education-item .education-publication-title{color:var(--ink);font-weight:500;overflow-wrap:anywhere}

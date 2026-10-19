@@ -269,8 +269,9 @@ export function PortfolioContent() {
                 <span className="education-role"><span data-i18n="degree">Informatika · Sarjana</span></span>
                 <span className="education-year"><span data-i18n="universityYear">Lulus 2026</span></span>
                 <p><span data-i18n="educationBody">Selama kuliah, aku mempelajari pengembangan aplikasi dan terlibat dalam penelitian bersama tim di bidang analisis sentimen.</span></p>
-                <h4 className="education-highlights-title"><span data-i18n="educationHighlights">Kegiatan &amp; pencapaian</span></h4>
-                <ul className="education-highlights">
+                <details className="education-accordion">
+                  <summary className="education-accordion-summary"><span data-i18n="educationHighlights">Kegiatan &amp; pencapaian</span><svg className="od-icon education-accordion-toggle" aria-hidden="true"><use href="#i-chevron" /></svg></summary>
+                  <ul className="education-highlights">
                   <li>
                     <div className="education-highlight-heading">
                       <strong><span data-i18n="publicationLabel">Publikasi jurnal</span></strong>
@@ -289,7 +290,8 @@ export function PortfolioContent() {
                     <p><span data-i18n="certificationBody">Memperoleh sertifikasi kompetensi Analis Program di bidang pengembangan perangkat lunak. Cakupan kompetensi meliputi analisis skalabilitas, implementasi algoritma, SQL dan akses basis data, serta kualitas kode melalui dokumentasi, debugging, profiling, code review, dan pengujian unit maupun integrasi.</span></p>
                     <a className="text-link" href="/certificates/sertifikasi-kompetensi-analis-program-bnsp.pdf" download="Sertifikasi-Kompetensi-Analis-Program-Ramadhoni-Gibran-Maulana.pdf"><span data-i18n="downloadCertificate">Unduh sertifikat (PDF)</span> <svg className="od-icon" aria-hidden="true"><use href="#i-down" /></svg></a>
                   </li>
-                </ul>
+                  </ul>
+                </details>
               </div>
             </article>
             <article className="education-item"><span className="education-mark"><img className="education-logo" src="/smkn-1-cibinong-logo.webp" width="320" height="312" alt="Logo SMK Negeri 1 Cibinong" loading="lazy" data-i18n-alt="schoolLogo" /></span><div><h3>SMK Negeri 1 Cibinong</h3><span className="education-role"><span data-i18n="schoolBody">Teknik Kendaraan Ringan</span></span><span className="education-year"><span data-i18n="schoolYear">Lulus 2022</span></span></div></article>
