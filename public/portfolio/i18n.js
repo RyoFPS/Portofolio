@@ -108,7 +108,7 @@ const attributeTargets = ['aria-label', 'alt', 'content'].flatMap(attribute =>
   }))
 );
 const languageSelect = document.querySelector('#language-select');
-let currentLanguage = 'id';
+let currentLanguage = 'en';
 
 const feedback = {
   id: {
@@ -164,8 +164,8 @@ function applyLanguage(language) {
 console.assert([...textTargets, ...attributeTargets].every(target => typeof english[target.key] === 'string'), 'Missing English translation');
 console.assert(formatProjectCount(0, 'en') === '0 projects shown' && formatProjectCount(1, 'en') === '1 project shown' && formatProjectCount(2, 'id') === '2 proyek ditampilkan', 'Project count translation is inconsistent');
 
-let savedLanguage = 'id';
-try { savedLanguage = localStorage.getItem('portfolio-language') || 'id'; } catch { /* Storage may be unavailable for local files. */ }
+let savedLanguage = 'en';
+try { savedLanguage = localStorage.getItem('portfolio-language') || 'en'; } catch { /* Storage may be unavailable for local files. */ }
 applyLanguage(savedLanguage);
 languageSelect.disabled = false;
 languageSelect.dataset.languageReady = 'true';

@@ -119,7 +119,7 @@ export function PortfolioContent() {
       <header className="site-header shell" id="top">
         <a className="wordmark" href="#top" aria-label="Ryo, kembali ke atas" data-i18n-aria-label="homeLabel">ryo<span>.</span></a>
         <nav className="desktop-nav" aria-label="Navigasi utama" data-i18n-aria-label="navLabel">
-          <select className="language-select" id="language-select" aria-label="Bahasa" disabled hidden aria-hidden="true" tabIndex={-1}>
+          <select className="language-select" id="language-select" aria-label="Language" disabled hidden aria-hidden="true" tabIndex={-1}>
             <option value="id" lang="id">ID</option><option value="en" lang="en">EN</option>
           </select>
           <LanguageSelect />
@@ -131,7 +131,7 @@ export function PortfolioContent() {
       </header>
       <p className="sr-only" id="language-status" role="status" aria-live="polite" />
 
-      <main className="shell" id="main" lang="id">
+      <main className="shell" id="main" lang="en">
         <section className="profile" id="tentang" aria-labelledby="profile-name">
           <BackgroundRippleEffect />
           <div className="profile-top od-row">
