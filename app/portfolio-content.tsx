@@ -213,8 +213,7 @@ export function PortfolioContent() {
           <div className="section-heading">
             <h2 className="section-title" id="projects-title"><span data-i18n="projectsTitle">Proyek pilihan</span></h2>
             <div className="filter-group" role="group" aria-label="Filter jenis proyek" data-i18n-aria-label="filterLabel">
-              <Button type="button" variant="ghost" className="filter" data-filter="all" aria-pressed="true"><span data-i18n="all">Semua</span> <small>02</small></Button>
-              <Button type="button" variant="ghost" className="filter" data-filter="web" aria-pressed="false">Web</Button>
+              <Button type="button" variant="ghost" className="filter" data-filter="all" aria-pressed="true"><span data-i18n="all">Semua</span> <small>01</small></Button>
               <Button type="button" variant="ghost" className="filter" data-filter="mobile" aria-pressed="false">Mobile</Button>
             </div>
           </div>
@@ -231,21 +230,9 @@ export function PortfolioContent() {
                 <div className="project-tags">{["Flutter", "Dart", "Geolocation"].map((name) => <TechBadge key={name} name={name} />)}</div>
               </div>
             </article>
-            <article className="project-card" data-category="web">
-              <div className="project-preview"><div className="browser-preview">
-                <div className="browser-toolbar" aria-hidden="true"><span className="browser-dot" /><span className="browser-dot" /><span className="browser-dot" /><span className="browser-address">Goyalla Syariah / Umrah</span></div>
-                <ProjectImage src="assets/goyalla-after.png" width={747} height={405} alt="Screenshot asli pembaruan daftar paket Umrah di Goyalla Syariah" translation="yallaScreenshotAlt" />
-              </div></div>
-              <div className="project-copy">
-                <p className="project-type"><span data-i18n="yallaType">Proyek tim · PT. Yalla Wisata Indonesia</span></p>
-                <h3><button className="project-title" data-open="goyalla-dialog" aria-label="Lihat detail proyek Goyalla Syariah" data-i18n-aria-label="yallaDetailsLabel"><span>Goyalla Syariah</span><svg className="od-icon" aria-hidden="true"><use href="#i-arrow" /></svg></button></h3>
-                <p className="project-description"><span data-i18n="yallaCard">Platform OTA perjalanan syariah untuk Haji dan Umrah. Berkontribusi pada UI/UX, backend, panel admin dan vendor, serta CMS FAQ bersama tim.</span></p>
-                <div className="project-tags">{["Laravel", "Blade", "PHP", "MySQL"].map((name) => <TechBadge key={name} name={name} />)}</div>
-              </div>
-            </article>
           </div>
-          <p className="filter-status" id="filter-status" role="status" aria-live="polite">2 proyek ditampilkan</p>
-          <noscript><p>Aktifkan JavaScript untuk filter dan detail proyek. Ringkasan kedua proyek tetap dapat dibaca di atas.</p></noscript>
+          <p className="filter-status" id="filter-status" role="status" aria-live="polite">1 proyek ditampilkan</p>
+          <noscript><p>Aktifkan JavaScript untuk filter dan detail proyek. Ringkasan proyek tetap dapat dibaca di atas.</p></noscript>
         </section>
 
         <section className="section" id="keahlian" aria-labelledby="skills-title">
