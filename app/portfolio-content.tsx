@@ -221,8 +221,8 @@ export function PortfolioContent() {
           <div className="projects-grid od-grid">
             <article className="project-card" data-category="mobile">
               <div className="project-preview"><div className="mobile-shots">
-                <ProjectImage src="assets/odomate-home.png" width={720} height={1600} alt="Beranda OdoMate dengan catatan odometer dan statistik perjalanan" translation="odoHomeAlt" />
-                <ProjectImage src="assets/odomate-ride.png" width={720} height={1600} alt="Detail perjalanan OdoMate dengan peta rute" translation="odoRideAlt" />
+                <ProjectImage src="assets/odomate-home.webp" width={720} height={1600} alt="Beranda OdoMate dengan catatan odometer dan statistik perjalanan" translation="odoHomeAlt" />
+                <ProjectImage src="assets/odomate-ride.webp" width={720} height={1600} alt="Detail perjalanan OdoMate dengan peta rute" translation="odoRideAlt" />
               </div></div>
               <div className="project-copy">
                 <p className="project-type"><span data-i18n="odoType">Proyek personal · Dikembangkan mandiri</span></p>
@@ -320,12 +320,16 @@ export function PortfolioContent() {
           <h3><span data-i18n="technologiesLabel">Teknologi yang digunakan</span></h3>
           <div className="experience-tags">{["Flutter", "Dart", "Geolocation"].map((name) => <TechBadge key={name} name={name} />)}</div>
           <div className="dialog-gallery mobile">
-            <figure><ProjectImage src="assets/odomate-home.png" width={720} height={1600} alt="Screenshot penuh beranda OdoMate" translation="odoFullHomeAlt" /><figcaption><span data-i18n="odoHomeCaption">Beranda dan ringkasan aktivitas</span></figcaption></figure>
-            <figure><ProjectImage src="assets/odomate-ride.png" width={720} height={1600} alt="Screenshot penuh detail rute perjalanan OdoMate" translation="odoFullRideAlt" /><figcaption><span data-i18n="odoRideCaption">Detail perjalanan dan rute GPS</span></figcaption></figure>
+            <figure><ProjectImage src="assets/odomate-home.webp" width={720} height={1600} alt="Screenshot penuh beranda OdoMate" translation="odoFullHomeAlt" /><figcaption><span data-i18n="odoHomeCaption">Beranda dan ringkasan aktivitas</span></figcaption></figure>
+            <figure><ProjectImage src="assets/odomate-history.webp" width={720} height={1600} alt="Riwayat perjalanan dan ringkasan jarak OdoMate" translation="odoFullHistoryAlt" /><figcaption><span data-i18n="odoHistoryCaption">Riwayat perjalanan</span></figcaption></figure>
+            <figure><ProjectImage src="assets/odomate-ride.webp" width={720} height={1600} alt="Screenshot detail perjalanan dan peta rute OdoMate" translation="odoFullRideAlt" /><figcaption><span data-i18n="odoRideCaption">Detail perjalanan dan rute GPS</span></figcaption></figure>
+            <figure><ProjectImage src="assets/odomate-service.webp" width={720} height={1600} alt="Jadwal servis dan status perawatan OdoMate" translation="odoFullServiceAlt" /><figcaption><span data-i18n="odoServiceCaption">Jadwal servis</span></figcaption></figure>
+            <figure><ProjectImage src="assets/odomate-stats.webp" width={720} height={1600} alt="Statistik perjalanan dan tren jarak OdoMate" translation="odoFullStatsAlt" /><figcaption><span data-i18n="odoStatsCaption">Statistik perjalanan</span></figcaption></figure>
+            <figure><ProjectImage src="assets/odomate-profile.webp" width={720} height={1600} alt="Profil pengguna dan kendaraan pada OdoMate" translation="odoFullProfileAlt" /><figcaption><span data-i18n="odoProfileCaption">Profil pengguna dan kendaraan</span></figcaption></figure>
           </div>
           <h3><span data-i18n="moreTitle">Ingin tahu lebih lanjut?</span></h3>
-          <p><span data-i18n="odoMore">Tautan repository dan demo belum dicantumkan. Hubungi aku untuk berdiskusi tentang proyek ini.</span></p>
-          <a className="text-link" data-email-subject="odomate" href="mailto:ramdhon1.ssss@gmail.com?subject=Tentang%20proyek%20OdoMate"><span data-i18n="odoAsk">Tanya tentang OdoMate</span> <svg className="od-icon" aria-hidden="true"><use href="#i-arrow" /></svg></a>
+          <p><span data-i18n="odoMore">Kode sumber OdoMate tersedia di GitHub. Lihat repository untuk detail dan pembaruan proyek.</span></p>
+          <a className="text-link" href="https://github.com/RyoFPS/odomate" target="_blank" rel="noreferrer"><span data-i18n="odoAsk">Lihat repository OdoMate</span> <svg className="od-icon" aria-hidden="true"><use href="#i-arrow" /></svg></a>
         </div>
       </PortfolioDrawer>
       <PortfolioDrawer id="goyalla-dialog" labelledBy="goyalla-title">

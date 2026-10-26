@@ -85,11 +85,19 @@ const english = {
   "odoService": "Displayed ride statistics and periodic service schedules.",
   "odoFullHomeAlt": "Full screenshot of the OdoMate home screen",
   "odoHomeCaption": "Home and activity overview",
+  "odoFullHistoryAlt": "Full screenshot of OdoMate ride history",
+  "odoHistoryCaption": "Ride history",
   "odoFullRideAlt": "Full screenshot of OdoMate ride route details",
   "odoRideCaption": "Ride details and GPS route",
+  "odoFullServiceAlt": "Full screenshot of OdoMate maintenance schedules",
+  "odoServiceCaption": "Maintenance schedules",
+  "odoFullStatsAlt": "Full screenshot of OdoMate ride statistics",
+  "odoStatsCaption": "Ride statistics",
+  "odoFullProfileAlt": "Full screenshot of the OdoMate user and vehicle profile",
+  "odoProfileCaption": "User and vehicle profile",
   "moreTitle": "Want to know more?",
-  "odoMore": "Repository and demo links have not been added yet. Get in touch to discuss this project.",
-  "odoAsk": "Ask about OdoMate",
+  "odoMore": "OdoMate source code is available on GitHub. Visit the repository for project details and updates.",
+  "odoAsk": "View OdoMate repository",
   "yallaClose": "Close Goyalla Syariah details",
   "yallaMeta": "Team project · PT. Yalla Wisata Indonesia · 12 August–12 November 2025",
   "yallaBody": "Goyalla Syariah is an online travel agency (OTA) platform for Sharia-compliant travel, particularly Hajj and Umrah. During my internship, I contributed to the development and maintenance of the platform as part of a team.",
@@ -125,8 +133,8 @@ const feedback = {
   }
 };
 const emailSubjects = {
-  id: { contact: 'Mari terhubung — Portofolio', odomate: 'Tentang proyek OdoMate' },
-  en: { contact: 'Let’s connect — Portfolio', odomate: 'About the OdoMate project' }
+  id: { contact: 'Mari terhubung — Portofolio' },
+  en: { contact: 'Let’s connect — Portfolio' }
 };
 
 function formatProjectCount(count, language = currentLanguage) {
