@@ -169,8 +169,29 @@ export function PortfolioContent() {
             <details className="experience-item" name="professional-experience" open suppressHydrationWarning>
               <summary className="experience-summary">
                 <span className="company-mark"><img className="company-logo" src="/syncost-app-icon.webp" width="32" height="32" alt="Ikon Syncost" loading="lazy" data-i18n-alt="syncIcon" /></span>
+                <span className="experience-title od-field"><strong>PT. Sync Software Technologies</strong><span className="experience-role"><span data-i18n="syncFreelanceRole">Fullstack Developer · Freelance</span></span></span>
+                <Badge variant="secondary" className="experience-date"><span data-i18n="syncFreelancePeriod">Jun 2026 – Sekarang</span></Badge>
+                <span className="experience-toggle" aria-hidden="true"><svg className="od-icon"><use href="#i-chevron" /></svg></span>
+              </summary>
+              <div className="experience-content">
+                <p><span data-i18n="syncFreelanceSummary">Berkontribusi dalam pengembangan dan pemeliharaan platform Syncost sebagai Fullstack Developer freelance, mencakup responsivitas, analitik produk, laporan email, dan integrasi Shopify.</span></p>
+                <ul>
+                  <li><span data-i18n="syncFreelanceResponsive">Memperbaiki responsivitas website agar nyaman digunakan di berbagai ukuran layar.</span></li>
+                  <li><span data-i18n="syncFreelanceAnalytics">Menambahkan fitur Product Analytics untuk membantu pengguna menganalisis performa produk.</span></li>
+                  <li><span data-i18n="syncFreelanceReports">Membangun fitur Email Report otomatis menggunakan AWS SES untuk mengirim laporan harian atau mingguan kepada pengguna.</span></li>
+                  <li><span data-i18n="syncFreelanceEmbedded">Mengintegrasikan Shopify sebagai embedded app menggunakan Polaris dan menyesuaikannya dengan kebutuhan platform Shopify.</span></li>
+                </ul>
+                <div className="experience-tags" aria-label="Teknologi yang digunakan" data-i18n-aria-label="technologiesLabel">
+                  {["HTML", "CSS", "JavaScript", "Blade", "Vue", "PHP", "Laravel", "MySQL", "Docker", "Git"].map((name) => <TechBadge key={name} name={name} />)}
+                </div>
+                <button className="text-link" data-open="sync-freelance-dialog"><span data-i18n="syncFreelanceDetails">Lihat detail pekerjaan freelance</span> <svg className="od-icon" aria-hidden="true"><use href="#i-arrow" /></svg></button>
+              </div>
+            </details>
+            <details className="experience-item" name="professional-experience" suppressHydrationWarning>
+              <summary className="experience-summary">
+                <span className="company-mark"><img className="company-logo" src="/syncost-app-icon.webp" width="32" height="32" alt="Ikon Syncost" loading="lazy" data-i18n-alt="syncIcon" /></span>
                 <span className="experience-title od-field"><strong>PT. Sync Software Technologies</strong><span className="experience-role">Frontend Developer Intern</span></span>
-                <Badge variant="secondary" className="experience-date"><span data-i18n="syncPeriod">10 Des 2025 – 8 Mar 2026</span></Badge>
+                <Badge variant="secondary" className="experience-date"><span data-i18n="syncPeriod">Jan 2026 – Mar 2026</span></Badge>
                 <span className="experience-toggle" aria-hidden="true"><svg className="od-icon"><use href="#i-chevron" /></svg></span>
               </summary>
               <div className="experience-content">
@@ -333,13 +354,24 @@ export function PortfolioContent() {
       <PortfolioDrawer id="syncost-dialog" labelledBy="syncost-title">
         <div className="dialog-header"><h2 id="syncost-title">Syncost</h2><button className="round-button" data-close aria-label="Tutup detail Syncost" data-i18n-aria-label="syncostClose"><svg className="od-icon" aria-hidden="true"><use href="#i-close" /></svg></button></div>
         <div className="dialog-content">
-          <p className="dialog-meta"><span data-i18n="syncostMeta">Pengalaman kerja · PT. Sync Software Technologies · 10 Des 2025–8 Mar 2026</span></p>
+          <p className="dialog-meta"><span data-i18n="syncostMeta">Pengalaman kerja · PT. Sync Software Technologies · Januari 2026–Maret 2026</span></p>
           <p><span data-i18n="syncostBody">Syncost membantu pemilik toko Shopify memahami profit dengan merangkum biaya produk, pengiriman, biaya transaksi, iklan, dan pengeluaran lain dalam satu dashboard.</span></p>
           <h3><span data-i18n="contributions">Yang aku kerjakan</span></h3>
           <ul><li><span data-i18n="syncModals">Menyelaraskan tampilan 7 modal pengelolaan biaya produk, pesanan, dan pengiriman dengan desain yang disediakan menggunakan HTML, CSS, JavaScript, Blade, dan Vue.</span></li><li><span data-i18n="syncToolbar">Menyesuaikan Product Toolbar agar konsisten dengan desain aplikasi melalui pembaruan antarmuka.</span></li><li><span data-i18n="syncOnboarding">Memperbarui tampilan onboarding berdasarkan desain yang disediakan untuk mendukung alur pengguna baru.</span></li></ul>
           <h3><span data-i18n="technologiesLabel">Teknologi yang digunakan</span></h3>
           <div className="experience-tags">{["HTML", "CSS", "JavaScript", "Blade", "Vue", "PHP", "Laravel", "MySQL", "Docker", "Git"].map((name) => <TechBadge key={name} name={name} />)}</div>
           <a className="text-link" href="https://www.syncost.com/" target="_blank" rel="noreferrer"><span data-i18n="syncostWebsite">Kunjungi situs Syncost</span> <svg className="od-icon" aria-hidden="true"><use href="#i-arrow" /></svg></a>
+        </div>
+      </PortfolioDrawer>
+      <PortfolioDrawer id="sync-freelance-dialog" labelledBy="sync-freelance-title">
+        <div className="dialog-header"><h2 id="sync-freelance-title"><span data-i18n="syncFreelanceRole">Fullstack Developer · Freelance</span></h2><button className="round-button" data-close aria-label="Tutup detail pekerjaan freelance" data-i18n-aria-label="syncFreelanceClose"><svg className="od-icon" aria-hidden="true"><use href="#i-close" /></svg></button></div>
+        <div className="dialog-content">
+          <p className="dialog-meta"><span data-i18n="syncFreelanceMeta">Pengalaman freelance · PT. Sync Software Technologies · Jun 2026–Sekarang</span></p>
+          <p><span data-i18n="syncFreelanceSummary">Berkontribusi dalam pengembangan dan pemeliharaan platform Syncost sebagai Fullstack Developer freelance, mencakup responsivitas, analitik produk, laporan email, dan integrasi Shopify.</span></p>
+          <h3><span data-i18n="contributions">Yang aku kerjakan</span></h3>
+          <ul><li><span data-i18n="syncFreelanceResponsive">Memperbaiki responsivitas website agar nyaman digunakan di berbagai ukuran layar.</span></li><li><span data-i18n="syncFreelanceAnalytics">Menambahkan fitur Product Analytics untuk membantu pengguna menganalisis performa produk.</span></li><li><span data-i18n="syncFreelanceReports">Membangun fitur Email Report otomatis menggunakan AWS SES untuk mengirim laporan harian atau mingguan kepada pengguna.</span></li><li><span data-i18n="syncFreelanceEmbedded">Mengintegrasikan Shopify sebagai embedded app menggunakan Polaris dan menyesuaikannya dengan kebutuhan platform Shopify.</span></li></ul>
+          <h3><span data-i18n="technologiesLabel">Teknologi yang digunakan</span></h3>
+          <div className="experience-tags">{["HTML", "CSS", "JavaScript", "Blade", "Vue", "PHP", "Laravel", "MySQL", "Docker", "Git"].map((name) => <TechBadge key={name} name={name} />)}</div>
         </div>
       </PortfolioDrawer>
       <PortfolioDrawer id="profile-dialog" labelledBy="profile-title" className="notice-dialog">
