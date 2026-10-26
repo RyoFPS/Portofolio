@@ -138,13 +138,13 @@ export function PortfolioContent() {
             <figure className="avatar"><img src="/IMG_lmc20260626_112640_lmc_8.4.webp" width="1728" height="2304" alt="Foto profil Ramadhoni Gibran Maulana" fetchPriority="high" data-i18n-alt="portraitAlt" /></figure>
             <div className="od-fill">
               <h1 className="profile-name" id="profile-name">Ramadhoni Gibran Maulana<span style={{ color: "var(--accent)" }}>.</span></h1>
-              <p className="profile-role">Software Engineer</p>
+              <p className="profile-role">Junior Data Analyst</p>
               <p className="profile-location"><span className="location-mark" aria-hidden="true" />Indonesia</p>
             </div>
           </div>
           <div className="profile-copy">
-            <p><span data-i18n="introStart">Halo, aku</span> <FlipWords words={["Ryo", "Ramadhoni", "Ramdhon"]} />. <strong><span data-i18n="introStrong">Aku mengembangkan aplikasi web dan mobile,</span></strong> <span data-i18n="introEnd">sambil terus belajar lewat proyek pribadi dan pengalaman bekerja bersama tim.</span></p>
-            <p><span data-i18n="about">Aku punya latar belakang Informatika dan pengalaman mengerjakan frontend maupun backend. Aku terbuka untuk kesempatan kerja dan kolaborasi dalam pengembangan aplikasi.</span></p>
+            <p><span data-i18n="introStart">Saya</span> <FlipWords words={["Ryo", "Ramadhoni", "Ramdhon"]} />, <strong><span data-i18n="introStrong">lulusan S1 Informatika yang menargetkan posisi Junior Data Analyst.</span></strong> <span data-i18n="introEnd">Saya memiliki pengalaman riset analisis teks menggunakan Python, pandas, dan scikit-learn, termasuk data preprocessing, TF-IDF, dan evaluasi model.</span></p>
+            <p><span data-i18n="about">Dalam penelitian skripsi, saya memproses 266.288 ulasan Steam menjadi 151.686 data setelah filtering dan membandingkan tiga model klasifikasi sentimen. Multinomial Naive Bayes memperoleh akurasi tertinggi sebesar 95,20%, sedangkan Logistic Regression memperoleh macro F1 tertinggi sebesar 0,7334.</span></p>
           </div>
           <div className="interest-row">
             <span className="interest-label"><span data-i18n="interests">Minat</span></span>
@@ -176,9 +176,9 @@ export function PortfolioContent() {
               <div className="experience-content">
                 <p><span data-i18n="syncSummary">Berkontribusi pada pembaruan antarmuka aplikasi SaaS manajemen biaya berdasarkan desain yang disediakan.</span></p>
                 <ul>
-                  <li><span data-i18n="syncModals">Memperbarui tampilan tujuh modal untuk pengelolaan biaya produk, pesanan, dan pengiriman.</span></li>
-                  <li><span data-i18n="syncToolbar">Menyesuaikan Product Toolbar agar konsisten dengan desain aplikasi.</span></li>
-                  <li><span data-i18n="syncOnboarding">Mengimplementasikan pembaruan tampilan onboarding berdasarkan desain yang disediakan.</span></li>
+                  <li><span data-i18n="syncModals">Menyelaraskan tampilan 7 modal pengelolaan biaya produk, pesanan, dan pengiriman dengan desain yang disediakan menggunakan HTML, CSS, JavaScript, Blade, dan Vue.</span></li>
+                  <li><span data-i18n="syncToolbar">Menyesuaikan Product Toolbar agar konsisten dengan desain aplikasi melalui pembaruan antarmuka.</span></li>
+                  <li><span data-i18n="syncOnboarding">Memperbarui tampilan onboarding berdasarkan desain yang disediakan untuk mendukung alur pengguna baru.</span></li>
                 </ul>
                 <div className="experience-tags" aria-label="Teknologi yang digunakan" data-i18n-aria-label="technologiesLabel">
                   {["HTML", "CSS", "JavaScript", "Blade", "Vue", "PHP", "Laravel", "MySQL", "Docker", "Git"].map((name) => <TechBadge key={name} name={name} />)}
@@ -196,9 +196,9 @@ export function PortfolioContent() {
               <div className="experience-content">
                 <p><span data-i18n="yallaSummary">Berkontribusi bersama tim dalam pengembangan Goyalla Syariah, platform perjalanan untuk layanan Haji dan Umrah.</span></p>
                 <ul>
-                  <li><span data-i18n="yallaUI">Memperbarui antarmuka pada sisi frontend.</span></li>
-                  <li><span data-i18n="yallaBackend">Menangani masalah backend pada panel admin dan vendor.</span></li>
-                  <li><span data-i18n="yallaCMS">Mengembangkan CMS FAQ agar admin dapat memperbarui konten tanpa mengubah kode.</span></li>
+                  <li><span data-i18n="yallaBackend">Mendukung stabilitas 2 panel operasional (admin dan vendor) dengan menyelesaikan isu backend pada platform OTA Haji dan Umrah menggunakan PHP/Laravel dan MySQL.</span></li>
+                  <li><span data-i18n="yallaUI">Memperbarui antarmuka platform OTA Haji dan Umrah untuk mendukung perbaikan UI/UX.</span></li>
+                  <li><span data-i18n="yallaCMS">Memungkinkan admin memperbarui konten FAQ tanpa mengubah kode dengan membangun fitur CMS FAQ.</span></li>
                 </ul>
                 <div className="experience-tags" aria-label="Teknologi yang digunakan" data-i18n-aria-label="technologiesLabel">
                   {["HTML", "CSS", "JavaScript", "Blade", "PHP", "Laravel", "MySQL", "Git"].map((name) => <TechBadge key={name} name={name} />)}
@@ -266,7 +266,7 @@ export function PortfolioContent() {
               <span className="education-mark"><img className="education-logo" src="/bsi-logo.webp" width="1500" height="1513" alt="Logo Universitas Bina Sarana Informatika" loading="lazy" data-i18n-alt="universityLogo" /></span>
               <div>
                 <h3>Universitas Bina Sarana Informatika</h3>
-                <span className="education-role"><span data-i18n="degree">Informatika · Sarjana</span></span>
+                <span className="education-role"><span data-i18n="degree">Informatika · Sarjana · IPK 3.86</span></span>
                 <span className="education-year"><span data-i18n="universityYear">Lulus 2026</span></span>
                 <p><span data-i18n="educationBody">Selama kuliah, aku mempelajari pengembangan aplikasi dan terlibat dalam penelitian bersama tim di bidang analisis sentimen.</span></p>
                 <details className="education-accordion">
@@ -345,7 +345,7 @@ export function PortfolioContent() {
           <p className="dialog-meta"><span data-i18n="syncostMeta">Pengalaman kerja · PT. Sync Software Technologies · 10 Des 2025–8 Mar 2026</span></p>
           <p><span data-i18n="syncostBody">Syncost membantu pemilik toko Shopify memahami profit dengan merangkum biaya produk, pengiriman, biaya transaksi, iklan, dan pengeluaran lain dalam satu dashboard.</span></p>
           <h3><span data-i18n="contributions">Yang aku kerjakan</span></h3>
-          <ul><li><span data-i18n="syncModals">Memperbarui tampilan tujuh modal untuk pengelolaan biaya produk, pesanan, dan pengiriman.</span></li><li><span data-i18n="syncToolbar">Menyesuaikan Product Toolbar agar konsisten dengan desain aplikasi.</span></li><li><span data-i18n="syncOnboarding">Mengimplementasikan pembaruan tampilan onboarding berdasarkan desain yang disediakan.</span></li></ul>
+          <ul><li><span data-i18n="syncModals">Menyelaraskan tampilan 7 modal pengelolaan biaya produk, pesanan, dan pengiriman dengan desain yang disediakan menggunakan HTML, CSS, JavaScript, Blade, dan Vue.</span></li><li><span data-i18n="syncToolbar">Menyesuaikan Product Toolbar agar konsisten dengan desain aplikasi melalui pembaruan antarmuka.</span></li><li><span data-i18n="syncOnboarding">Memperbarui tampilan onboarding berdasarkan desain yang disediakan untuk mendukung alur pengguna baru.</span></li></ul>
           <h3><span data-i18n="technologiesLabel">Teknologi yang digunakan</span></h3>
           <div className="experience-tags">{["HTML", "CSS", "JavaScript", "Blade", "Vue", "PHP", "Laravel", "MySQL", "Docker", "Git"].map((name) => <TechBadge key={name} name={name} />)}</div>
           <a className="text-link" href="https://www.syncost.com/" target="_blank" rel="noreferrer"><span data-i18n="syncostWebsite">Kunjungi situs Syncost</span> <svg className="od-icon" aria-hidden="true"><use href="#i-arrow" /></svg></a>

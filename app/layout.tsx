@@ -8,9 +8,9 @@ import { ThemeProvider } from "@/components/theme-provider";
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
-  title: "Ramadhoni Gibran Maulana - Software Engineer",
+  title: "Ramadhoni Gibran Maulana - Junior Data Analyst",
   description:
-    "Portofolio Ramadhoni Gibran Maulana — Software Engineer dengan fokus frontend. Kenali karya, keahlian, dan perjalanan saya.",
+    "Portofolio Ramadhoni Gibran Maulana — Junior Data Analyst dengan latar belakang Informatika dan pengalaman pengembangan web. Kenali karya, keahlian, dan perjalanan saya.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
